@@ -99,28 +99,30 @@ export function MTableToolbar(props) {
           onChange={(event) => onSearchChange(event.target.value)}
           placeholder={localization.searchPlaceholder}
           variant={options.searchFieldVariant}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <Tooltip title={localization.searchTooltip}>
-                  <icons.Search fontSize="small" />
-                </Tooltip>
-              </InputAdornment>
-            ),
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton
-                  disabled={!searchText}
-                  onClick={() => onSearchChange('')}
-                  aria-label={localization.clearSearchAriaLabel}
-                >
-                  <icons.ResetSearch fontSize="small" aria-label="clear" />
-                </IconButton>
-              </InputAdornment>
-            ),
-            style: options.searchFieldStyle,
-            inputProps: {
-              'aria-label': localization.searchAriaLabel
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  <Tooltip title={localization.searchTooltip}>
+                    <icons.Search fontSize="small" />
+                  </Tooltip>
+                </InputAdornment>
+              ),
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    disabled={!searchText}
+                    onClick={() => onSearchChange('')}
+                    aria-label={localization.clearSearchAriaLabel}
+                  >
+                    <icons.ResetSearch fontSize="small" aria-label="clear" />
+                  </IconButton>
+                </InputAdornment>
+              ),
+              style: options.searchFieldStyle,
+              inputProps: {
+                'aria-label': localization.searchAriaLabel
+              }
             }
           }}
         />

@@ -27,20 +27,22 @@ function DefaultFilter({
       onChange={(event) => {
         onFilterChanged(columnDef.tableData.id, event.target.value);
       }}
-      inputProps={{ 'aria-label': `filter data by ${columnDef.title}` }}
-      InputProps={
-        hideFilterIcons || columnDef.hideFilterIcon
-          ? undefined
-          : {
-              startAdornment: (
-                <InputAdornment position="start">
-                  <Tooltip title={_localization.filterTooltip}>
-                    <FilterIcon />
-                  </Tooltip>
-                </InputAdornment>
-              )
-            }
-      }
+      slotProps={{
+        input:
+          hideFilterIcons || columnDef.hideFilterIcon
+            ? undefined
+            : {
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <Tooltip title={_localization.filterTooltip}>
+                      <FilterIcon />
+                    </Tooltip>
+                  </InputAdornment>
+                )
+              },
+
+        htmlInput: { 'aria-label': `filter data by ${columnDef.title}` }
+      }}
     />
   );
 }

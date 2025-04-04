@@ -10,8 +10,8 @@ We have 2 GitHub actions that run whenever your commit message starts with `Rele
 # Publishing
 
 - Publish new **major** version
-  - `npm run release:major`
+  - `yarn run release:major`
 - Publish new **minor** version
-  - `npm run release:minor`
+  - `yarn run release:minor`
 - Publish new **patch** version
-  - `npm run release:patch`
+  - `yarn run release:patch`

@@ -17,15 +17,19 @@ function MTextField({ forwardedRef, ...props }) {
             : event.target.value
         )
       }
-      InputProps={{
-        style: {
-          minWidth: 50,
-          fontSize: 13
+      slotProps={{
+        input: {
+          style: {
+            minWidth: 50,
+            fontSize: 13
+          }
+        },
+
+        htmlInput: {
+          'aria-label': props.columnDef.title,
+          style:
+            props.columnDef.type === 'numeric' ? { textAlign: 'right' } : {}
         }
-      }}
-      inputProps={{
-        'aria-label': props.columnDef.title,
-        style: props.columnDef.type === 'numeric' ? { textAlign: 'right' } : {}
       }}
     />
   );
