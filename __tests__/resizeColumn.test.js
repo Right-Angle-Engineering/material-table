@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as CommonValues from '@utils/common-values';
+import * as CommonValues from './utils/common-values';
 import {
   screen,
   within,

@@ -18,12 +18,12 @@ import {
   Box as k
 } from '@mui/material';
 import { DragDropContext as A, Droppable as T } from '@hello-pangea/dnd';
-import B from '@utils/data-manager';
+import B from './utils/data-manager';
 import {
   MTablePagination as F,
   MTableSteppedPagination as z,
   MTableScrollbar as L
-} from '@components';
+} from './components';
 export default class q extends r.Component {
   constructor(t) {
     super(t);

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { TableRow, TableCell } from '@mui/material';
-import { getStyle } from '@utils';
-import * as CommonValues from '@utils/common-values';
-import { useOptionStore } from '@store';
+import { getStyle } from '../../utils';
+import * as CommonValues from '../../utils/common-values';
+import { useOptionStore } from '../../store';
 import PropTypes from 'prop-types';
 
 export function MTableSummaryRow({ columns, rowProps, renderSummaryRow }) {

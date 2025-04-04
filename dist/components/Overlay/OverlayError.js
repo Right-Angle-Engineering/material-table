@@ -2,7 +2,7 @@ var n = Object.assign;
 import r from 'react';
 import e from 'prop-types';
 import { useTheme as p } from '@mui/material/styles';
-import { useIconStore as s } from '@store';
+import { useIconStore as s } from '../../store';
 function l(t) {
   const o = s(),
     i = p();

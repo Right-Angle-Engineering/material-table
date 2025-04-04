@@ -13,8 +13,8 @@ import a from 'react';
 import p from '@mui/material/TableCell';
 import l from 'prop-types';
 import { getRenderValue as w } from './cellUtils';
-import { getStyle as v } from '@utils';
-import { useIconStore as D } from '@store';
+import { getStyle as v } from '../../utils';
+import { useIconStore as D } from '../../store';
 function s(e) {
   const r = D(),
     {

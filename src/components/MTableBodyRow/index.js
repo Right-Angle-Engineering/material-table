@@ -9,11 +9,15 @@ import {
   TableRow
 } from '@mui/material';
 // Internal
-import { MTableDetailPanel } from '@components/m-table-detailpanel';
-import * as CommonValues from '@utils/common-values';
-import { useDoubleClick } from '@utils/hooks/useDoubleClick';
-import { MTableCustomIcon } from '@components';
-import { useLocalizationStore, useOptionStore, useIconStore } from '@store';
+import { MTableDetailPanel } from '../m-table-detailpanel';
+import * as CommonValues from '../../utils/common-values';
+import { useDoubleClick } from '../../utils/hooks/useDoubleClick';
+import { MTableCustomIcon } from '../MTableCustomIcon';
+import {
+  useLocalizationStore,
+  useOptionStore,
+  useIconStore
+} from '../../store';
 
 function MTableBodyRow({ forwardedRef, ...props }) {
   const localization = useLocalizationStore().body;

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import * as CommonValues from '../../utils/common-values';
-import { useLocalizationStore, useIconStore } from '@store';
+import { useLocalizationStore, useIconStore } from '../../store';
 
 function MTablePaginationInner(props) {
   const theme = useTheme();

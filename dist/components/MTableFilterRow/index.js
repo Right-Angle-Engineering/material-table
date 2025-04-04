@@ -17,7 +17,7 @@ import h from './DefaultFilter';
 import T from './BooleanFilter';
 import w from './Filter';
 import { TableCell as f, TableRow as C } from '@mui/material';
-import { useOptionStore as x } from '@store/LocalizationStore';
+import { useOptionStore as x } from '../../store/LocalizationStore';
 export function MTableFilterRow(i) {
   var { columns: o = p.columns, hasActions: s = !1 } = i,
     t = m(i, ['columns', 'hasActions']);

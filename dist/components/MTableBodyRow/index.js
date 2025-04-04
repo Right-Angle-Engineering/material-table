@@ -18,15 +18,15 @@ import {
   Tooltip as re,
   TableRow as se
 } from '@mui/material';
-import { MTableDetailPanel as ce } from '@components/m-table-detailpanel';
-import * as E from '@utils/common-values';
-import { useDoubleClick as ue } from '@utils/hooks/useDoubleClick';
-import { MTableCustomIcon as A } from '@components';
+import { MTableDetailPanel as ce } from '../m-table-detailpanel';
+import * as E from '../../utils/common-values';
+import { useDoubleClick as ue } from '../../utils/hooks/useDoubleClick';
+import { MTableCustomIcon as A } from '../MTableCustomIcon';
 import {
   useLocalizationStore as be,
   useOptionStore as ye,
   useIconStore as fe
-} from '@store';
+} from '../../store';
 function q(f) {
   var { forwardedRef: b } = f,
     t = v(f, ['forwardedRef']);
@@ -45,8 +45,8 @@ function q(f) {
       onTreeExpandChanged: he,
       onToggleDetailPanel: G,
       onEditingCanceled: z,
-      onEditingApproved: p,
-      hasAnyEditingRow: I,
+      onEditingApproved: I,
+      hasAnyEditingRow: O,
       treeDataMaxLevel: H,
       path: g = [],
       actions: J = [],
@@ -55,7 +55,7 @@ function q(f) {
       onCellEditStarted: N,
       onCellEditFinished: Q,
       persistEvents: U = !1,
-      scrollWidth: O,
+      scrollWidth: p,
       onRowClick: h,
       onRowDoubleClick: w,
       columns: X
@@ -120,7 +120,7 @@ function q(f) {
               rowData: i,
               cellEditable: t.cellEditable,
               onCellEditFinished: t.onCellEditFinished,
-              scrollWidth: O
+              scrollWidth: p
             });
           {
             let s = l.editable !== 'never' && !!t.cellEditable;
@@ -137,7 +137,7 @@ function q(f) {
               rowData: i,
               cellEditable: s,
               onCellEditStarted: t.onCellEditStarted,
-              scrollWidth: O
+              scrollWidth: p
             });
           }
         }),
@@ -366,9 +366,9 @@ function q(f) {
       null,
       n.createElement(
         se,
-        a(a({ ref: b, selected: I }, M), {
+        a(a({ ref: b, selected: O }, M), {
           onClick: (e) => {
-            U && e.persist(), !I && Z(e);
+            U && e.persist(), !O && Z(e);
           },
           hover: !!(h || w),
           style: ne(M.index || 0, t.level),
@@ -399,7 +399,7 @@ function q(f) {
                 isTreeData: t.isTreeData,
                 detailPanel: t.detailPanel,
                 onEditingCanceled: z,
-                onEditingApproved: p,
+                onEditingApproved: I,
                 errorState: t.errorState
               })
             : n.createElement(
@@ -411,7 +411,7 @@ function q(f) {
                   level: t.level + 1,
                   path: [...g, e.tableData.uuid],
                   onEditingCanceled: z,
-                  onEditingApproved: p,
+                  onEditingApproved: I,
                   hasAnyEditingRow: t.hasAnyEditingRow,
                   treeDataMaxLevel: H,
                   errorState: t.errorState,

@@ -6,7 +6,7 @@ import DefaultFilter from './DefaultFilter';
 import BooleanFilter from './BooleanFilter';
 import Filter from './Filter';
 import { TableCell, TableRow } from '@mui/material';
-import { useOptionStore } from '@store/LocalizationStore';
+import { useOptionStore } from '../../store/LocalizationStore';
 
 /**
  * MTableFilterRow is the row that is shown when `MaterialTable.options.filtering` is true.

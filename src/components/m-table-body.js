@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TableBody, TableCell, TableRow } from '@mui/material';
-import { useLocalizationStore, useOptionStore, useIconStore } from '@store';
+import { useLocalizationStore, useOptionStore, useIconStore } from '../store';
 
 function MTableBody(userProps) {
   const props = { ...defaultProps, ...userProps };

@@ -1,5 +1,5 @@
 var c = Object.assign;
-import * as m from '@utils/common-values';
+import * as m from './utils/common-values';
 export const selectFromObject = (e, l) => {
     if (!l) return;
     let t;

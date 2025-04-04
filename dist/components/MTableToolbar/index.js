@@ -16,7 +16,7 @@ import {
   useLocalizationStore as G,
   useIconStore as J,
   useOptionStore as K
-} from '@store';
+} from '../../store';
 let b;
 export function MTableToolbar(e) {
   const s = W(),

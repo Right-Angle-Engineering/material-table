@@ -5,7 +5,7 @@ import f from '@mui/material/Typography';
 import i from 'prop-types';
 import o, { useEffect as C } from 'react';
 import { Droppable as G, Draggable as I } from '@hello-pangea/dnd';
-import { useLocalizationStore as T, useIconStore as D } from '@store';
+import { useLocalizationStore as T, useIconStore as D } from '../../store';
 import { Box as s } from '@mui/material';
 import { useOptionStore as O } from '../../store/LocalizationStore';
 function b(e) {

@@ -7,7 +7,7 @@ import a from 'prop-types';
 import t from 'react';
 import { useTheme as j } from '@mui/material/styles';
 import * as H from '../../utils/common-values';
-import { useLocalizationStore as V, useIconStore as W } from '@store';
+import { useLocalizationStore as V, useIconStore as W } from '../../store';
 function x(o) {
   const r = j(),
     n = V().pagination,

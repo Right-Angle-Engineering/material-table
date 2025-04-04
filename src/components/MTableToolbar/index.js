@@ -11,7 +11,11 @@ import { Box } from '@mui/material';
 import { lighten, useTheme } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { useLocalizationStore, useIconStore, useOptionStore } from '@store';
+import {
+  useLocalizationStore,
+  useIconStore,
+  useOptionStore
+} from '../../store';
 
 let searchTimer;
 

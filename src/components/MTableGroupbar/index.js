@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import { Droppable, Draggable } from '@hello-pangea/dnd';
-import { useLocalizationStore, useIconStore } from '@store';
+import { useLocalizationStore, useIconStore } from '../../store';
 import { Box } from '@mui/material';
 import { useOptionStore } from '../../store/LocalizationStore';
 /* eslint-enable no-unused-vars */

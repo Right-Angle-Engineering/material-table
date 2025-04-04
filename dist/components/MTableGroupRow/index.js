@@ -15,7 +15,7 @@ import I from '@mui/material/IconButton';
 import L from '@mui/material/Checkbox';
 import t from 'prop-types';
 import l from 'react';
-import { useOptionStore as q, useIconStore as z } from '@store';
+import { useOptionStore as q, useIconStore as z } from '../../store';
 function P(s) {
   var { columns: o = G.columns, groups: d = G.groups, level: a = 0 } = s,
     e = v(s, ['columns', 'groups', 'level']);

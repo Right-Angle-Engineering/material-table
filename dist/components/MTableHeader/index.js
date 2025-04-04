@@ -23,7 +23,7 @@ import {
   useLocalizationStore as oe,
   useIconStore as le,
   useOptionStore as ne
-} from '@store';
+} from '../../store';
 export function MTableHeader(c) {
   var {
       onColumnResized: r,

@@ -6,7 +6,7 @@ import {
   useLocalizationStore as P,
   useOptionStore as F,
   useIconStore as A
-} from '@store';
+} from '../store';
 function R(h) {
   const e = c(c({}, v), h),
     d = P().body,

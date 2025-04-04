@@ -14,10 +14,10 @@ import y from '@mui/material/TableCell';
 import J from '@mui/material/TableRow';
 import N from '@mui/material/Typography';
 import i from 'prop-types';
-import { setObjectByKey as A } from '@utils';
-import { useOptionStore as Q, useIconStore as X } from '@store';
-import * as S from '@utils/common-values';
-import { validateInput as B } from '@utils/validate';
+import { setObjectByKey as A } from '../../utils';
+import { useOptionStore as Q, useIconStore as X } from '../../store';
+import * as S from '../../utils/common-values';
+import { validateInput as B } from '../../utils/validate';
 function I(e) {
   const s = X(),
     l = Q(),

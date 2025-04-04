@@ -8,7 +8,11 @@ import Checkbox from '@mui/material/Checkbox';
 import { Draggable } from '@hello-pangea/dnd';
 import { Box, Tooltip } from '@mui/material';
 import * as CommonValues from '../../utils/common-values';
-import { useLocalizationStore, useIconStore, useOptionStore } from '@store';
+import {
+  useLocalizationStore,
+  useIconStore,
+  useOptionStore
+} from '../../store';
 
 export function MTableHeader({
   onColumnResized,

@@ -7,7 +7,10 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import * as CommonValues from '../../utils/common-values';
-import { useLocalizationStore, useIconStore } from '@store/LocalizationStore';
+import {
+  useLocalizationStore,
+  useIconStore
+} from '../../store/LocalizationStore';
 /* eslint-enable no-unused-vars */
 
 function MTablePagination(props) {

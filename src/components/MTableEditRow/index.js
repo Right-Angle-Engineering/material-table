@@ -3,10 +3,10 @@ import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
-import { setObjectByKey } from '@utils';
-import { useOptionStore, useIconStore } from '@store';
-import * as CommonValues from '@utils/common-values';
-import { validateInput } from '@utils/validate';
+import { setObjectByKey } from '../../utils';
+import { useOptionStore, useIconStore } from '../../store';
+import * as CommonValues from '../../utils/common-values';
+import { validateInput } from '../../utils/validate';
 
 function MTableEditRow(props) {
   const icons = useIconStore();

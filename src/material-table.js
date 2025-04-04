@@ -10,12 +10,12 @@ import {
   Box
 } from '@mui/material';
 import { DragDropContext, Droppable } from '@hello-pangea/dnd';
-import DataManager from '@utils/data-manager';
+import DataManager from './utils/data-manager';
 import {
   MTablePagination,
   MTableSteppedPagination,
   MTableScrollbar
-} from '@components';
+} from './components';
 
 export default class MaterialTable extends React.Component {
   dataManager = new DataManager();

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
-import { useIconStore } from '@store';
+import { useIconStore } from '../../store';
 
 function OverlayError(props) {
   const icons = useIconStore();

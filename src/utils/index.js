@@ -1,4 +1,4 @@
-import * as CommonValues from '@utils/common-values';
+import * as CommonValues from './utils/common-values';
 
 export const selectFromObject = (o, s) => {
   if (!s) {

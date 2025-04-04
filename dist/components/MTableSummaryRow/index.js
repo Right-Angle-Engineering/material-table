@@ -1,9 +1,9 @@
 var s = Object.assign;
 import * as p from 'react';
 import { TableRow as x, TableCell as g } from '@mui/material';
-import { getStyle as C } from '@utils';
-import * as f from '@utils/common-values';
-import { useOptionStore as T } from '@store';
+import { getStyle as C } from '../../utils';
+import * as f from '../../utils/common-values';
+import { useOptionStore as T } from '../../store';
 import b from 'prop-types';
 export function MTableSummaryRow({
   columns: d,

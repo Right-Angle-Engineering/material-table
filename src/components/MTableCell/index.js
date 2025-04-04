@@ -2,8 +2,8 @@ import React from 'react';
 import TableCell from '@mui/material/TableCell';
 import PropTypes from 'prop-types';
 import { getRenderValue } from './cellUtils';
-import { getStyle } from '@utils';
-import { useIconStore } from '@store';
+import { getStyle } from '../../utils';
+import { useIconStore } from '../../store';
 
 function MTableCell(props) {
   const icons = useIconStore();

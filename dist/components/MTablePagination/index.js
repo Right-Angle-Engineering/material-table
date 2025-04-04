@@ -10,7 +10,7 @@ import * as C from '../../utils/common-values';
 import {
   useLocalizationStore as k,
   useIconStore as L
-} from '@store/LocalizationStore';
+} from '../../store/LocalizationStore';
 function p(o) {
   const n = B(),
     a = L(),

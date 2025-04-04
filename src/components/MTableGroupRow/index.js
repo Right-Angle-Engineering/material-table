@@ -4,7 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { useOptionStore, useIconStore } from '@store';
+import { useOptionStore, useIconStore } from '../../store';
 
 function MTableGroupRow({
   columns = defaultProps.columns,
